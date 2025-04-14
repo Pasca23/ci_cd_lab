@@ -62,7 +62,7 @@ jobs:
                  username: ${{ github.actor }}
                  password: ${{ secrets.GITHUB_TOKEN }}
            - name: Build Docker Image
-             run: docker build -t ghcr.io/pasca23/ci_cd_lab:latest
+             run: docker build -t ghcr.io/pasca23/ci_cd_lab:latest .
 
            - name: Push Docker image
              run: docker push ghcr.io/pasca23/ci_cd_lab:latest 
