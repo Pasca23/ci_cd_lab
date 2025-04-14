@@ -41,7 +41,7 @@ jobs:
             run: go build -o myapp
     build:
         runs-on: ubuntu-latest
-        permission:
+        permissions:
             contents: write
             packages: write
         needs: compile
